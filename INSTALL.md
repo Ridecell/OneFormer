@@ -28,7 +28,7 @@ We use an evironment with the following specifications, packages and dependencie
   cd OneFormer
 
   # Install Pytorch
-  conda install pytorch==1.10.1 torchvision==0.11.2 cudatoolkit=11.3 -c pytorch -c conda-forge
+  conda install pytorch==1.10.1 torchvision==0.11.2 cudatoolkit-dev=11.3 -c pytorch -c conda-forge
 
   # Install opencv (required for running the demo)
   pip3 install -U opencv-python
