@@ -28,13 +28,13 @@ We use an evironment with the following specifications, packages and dependencie
   cd OneFormer
 
   # Install Pytorch
-  conda install pytorch==1.10.1 torchvision==0.11.2 cudatoolkit-dev=11.3 -c pytorch -c conda-forge
+  conda install pytorch==1.10.1 torchvision==0.11.2 cudatoolkit=11.3 cudatoolkit-dev=11.3 -c pytorch -c conda-forge
 
   # Install opencv (required for running the demo)
   pip3 install -U opencv-python
 
   # Install detectron2
-  python -m pip install 'git+https://github.com/facebookresearch/detectron2.git#egg=detectron2'
+  pip3 install 'git+https://github.com/facebookresearch/detectron2.git#egg=detectron2'
   # OR: python tools/setup_detectron2.py
 
   # Install other dependencies
@@ -47,7 +47,7 @@ We use an evironment with the following specifications, packages and dependencie
 
   From repo root (`OneFormer/`), run:
   ```bash
-  pip install -e .
+  pip3 install -e .
   ```
 
 - Setup wandb:
